@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+person:
+  name: qianzai${random.uuid} # \u968F\u673Auuid
+  age: 3
+  happy: false
+  birth: 2000/01/01
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - girl
+    - music
+  dog:
+    name: \u65FA\u8D22
+    age: 1
