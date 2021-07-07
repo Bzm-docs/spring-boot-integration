@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//bootdatamybatis.org//DTD Mapper 3.0//EN" "http://bootdatamybatis.org/dtd/bootdatamybatis-3-mapper.dtd" >
+<mapper namespace="ink.bzm.bootdatamybatis.dao.UserDao">
+
+    <select id="findAll" resultType="ink.bzm.bootdatamybatis.pojo.User">
+        select * from user
+    </select>
+
+    <select id="findById" resultType="ink.bzm.bootdatamybatis.pojo.User">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="save" parameterType="ink.bzm.bootdatamybatis.pojo.User">
+        insert into user(username,password,create_time) values (#{username},#{password},#{createTime})
+    </insert>
+
+    <update id="update" parameterType="ink.bzm.bootdatamybatis.pojo.User">
+        update user set username=#{username},password=#{password} where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        delete from user where id=#{id}
+    </delete>
+</mapper>
