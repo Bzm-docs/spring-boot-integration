@@ -6,10 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-/**
- * @author: buzhengmiao    docs.bzm.ink
- * @time: 2021/7/2 10:11
- */
 @SpringBootTest
 class HelloworldApplicationTests {
 
@@ -20,11 +16,9 @@ class HelloworldApplicationTests {
 	User user;
 
 	@Test
-
 	public void contextLoads() {
 		System.out.println(person); //打印person信息
 
 		System.out.println(user);
 	}
-
 }
