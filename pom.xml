@@ -11,6 +11,7 @@
         <module>helloworld</module>
         <module>springboot-loggin</module>
         <module>spring-boot-data-mybatis</module>
+        <module>Spring-boot-redis</module>
     </modules>
     <packaging>pom</packaging>
 
